@@ -1,8 +1,8 @@
 node{
     stage('SCM checkout'){
-	  Git 'https://github.com/lnviyyapu/lnvgitrep/'
+	  git 'https://github.com/lnviyyapu/lnvgitrep/'
 }
-Stage(‘compile-package'){
-  Sh  ‘mvn package’
+stage(‘compile-package'){
+  sh  ‘mvn package’
 }
 }
