@@ -10,6 +10,18 @@
   <properties>
     <tomcat.version>7.0.57</tomcat.version>
   </properties>
+	    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>maven-releases</name>
+            <url>http://localhost:8081/nexus/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>maven-snapshots</name>
+            <url>http://localhost:8081/nexus/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
   <dependencies>
     <dependency>
         <groupId>org.apache.tomcat.embed</groupId>
